@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 1</title>
+</head>
+<body>
+<header>
+    <h1>верх</h1>
+    <label>nav example</label>
+    <nav>
+        <a href="task1.html">task1</a> |
+        <a href="task2.html">task2</a> |
+        <a href="task3.html">task3</a> |
+        <a href="task4.html">task4</a> |
+        <a href="task5.html">task5</a>
+    </nav>
+</header>
+<main>
+    <article>заголовок</article>
+    <p>not aside content</p>
+    <aside>
+        <h4>окремий контент</h4>
+        <p>текст текст текст текст текст текст</p>
+    </aside>
+    <p>not aside content</p>
+    <p>not aside content</p>
+    <audio controls>
+        <source src="audio/file_example_MP3_1MG.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <video width="320" height="240" controls>
+        <source src="video/180607_A_124.mp4"/>
+        <track src="video/subs.srt" kind="subtitles" srclang="en" label="English">
+        Your browser does not support the video tag.
+    </video>
+    <p>текст
+        <bdi>ізольований текст</bdi>
+        tекст
+        <bdi>إيان</bdi>
+        текст
+    </p>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+
+
+    <form>
+        <p>select from datalist</p>
+        <label>
+            <input list="datalist" name="number">
+        </label>
+        <datalist id="datalist">
+            <option value="001">
+            <option value="002">
+            <option value="003">
+            <option value="004">
+            <option value="005">
+        </datalist>
+        <input type="submit">
+    </form>
+    <details>
+        <summary>details</summary>
+        <p> Some information </p>
+    </details>
+    <dialog open>This is an open dialog window</dialog>
+    <embed src="flash/snow.swf">
+    <p>
+        <mark>marked text</mark>
+    </p>
+
+    <label>menu example</label>
+    <menu label="menu" type="context" id="mymenu">
+        <menuitem label="item1">
+        </menuitem>
+        <menu label="item group">>
+            <menuitem label="item2">
+            </menuitem>
+            <menuitem label="item3" icon="ico_facebook.png">
+            </menuitem>
+        </menu>
+        <menuitem label="item4"></menuitem>
+    </menu>
+    <label>meter - 50% : </label>
+    <meter value="0.5">50%</meter>
+    <br>
+    <label>meter - 1 out 10 : </label>
+    <meter value="1" min="0" max="10"> 1 out 10</meter>
+
+
+    <br>
+    <label for = "x2multiplier">output exmple</label>
+    <form id="x2multiplier" oninput="result.value=(num.value * 2)">
+        <p>Enter number
+            <input type="number" name="num" autofocus></p>
+        <p>Multiplied x2: <output name="result">0</output></p>
+    </form>
+    <label for="progress">Some progress: </label>
+    <progress id="progress" value="66" max="100"> 66% </progress>
+
+    <h4>different sctions</h4>
+    <section>
+        <p>section 1</p>
+    </section>
+    <section>
+        <p>section 2</p>
+    </section>
+    <label for="time">some time : </label>
+    <time id="time" datetime="2020-03-28 20:28">2020.03.28</time>
+    <p>some long woooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooordThatBreaksHere|<wbr>|eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+    <div id = "placeForTemplated"></div>
+    <button onclick="addContentFromTemplate()">add content from template</button>
+    <template id = "template">
+        <h4>tamplate text</h4>
+    </template>
+</main>
+<label>figure</label>
+<figure>
+    <img src="images/7b5b5330-112b-11ea-a77f-7c019be7ecae.jpg" alt="mountain" height="716" width="1080">
+    <figcaption>some picture</figcaption>
+</figure>
+<label>picture</label>
+<br>
+<picture>
+    <source media="(max-width: 1400px)" srcset="images/stsci-h-p1917b-q-5198x4801.jpg">
+    <img src="images/space-signals-3246.jpg" alt="space">
+</picture>
+<footer>
+    <h1>низ</h1>
+</footer>
+</body>
+<script src="js/canvas.js"></script>
+<script src="js/task1.js"></script>
+</html>
